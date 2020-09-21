@@ -1,9 +1,9 @@
-# check whether the input string is palindrome.
+# Check whether the input string is palindrome.
 palindrome = input("input palindrome\n")
-palindrome = palindrome.casefold()  # removes all case distinctions
+# Removes all case distinctions
+palindrome = palindrome.casefold()
 rev_palindrome = reversed(palindrome)
 if list(palindrome) == list(rev_palindrome):
     print("yes")
 else:
     print("no")
-

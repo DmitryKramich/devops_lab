@@ -1,10 +1,13 @@
 commandCount = int(input("command count\n"))
 array = []
 for value in range(commandCount):
-    commandsArray = input().split()  # Splits a string into parts using a separator (if empty used space)
-    if commandsArray[0] == "insert":  # Checking command name by 0 index
+    # Splits a string into parts using a separator (if empty used space)
+    commandsArray = input().split()
+    # Checking command name by 0 index
+    if commandsArray[0] == "insert":
         if len(commandsArray) == 3:
-            array.insert(int(commandsArray[1]), int(commandsArray[2]))  # Transfer data from one array to another
+            # Transfer data from one array to another
+            array.insert(int(commandsArray[1]), int(commandsArray[2]))
     if commandsArray[0] == "remove":
         array.remove(int(commandsArray[1]))
     if commandsArray[0] == "print":
