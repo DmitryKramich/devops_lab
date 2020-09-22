@@ -14,7 +14,7 @@ parser.add_argument(
     const=1,
     help="Output file format: txt or json",
     default="txt"
-    )
+)
 parser.add_argument(
     "time_interval",
     type=int,
@@ -22,8 +22,9 @@ parser.add_argument(
     const=1,
     help="Time interval in which you will get data",
     default=30
-    )
+)
 args = parser.parse_args()
+
 
 class PCInfo:
     def __init__(self):
@@ -40,8 +41,10 @@ class PCInfo:
     def get_vmem(self):
         return psutil.virtual_memory().percent
 
+
 def ctime():
     return str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+
 
 def output_json():
     to_json = {
@@ -49,12 +52,13 @@ def output_json():
         "Time stamp": ctime(),
         "MEMORY": PCInfo().mem,
         "VIRTUAL_MEMORY": PCInfo().vmem
-        }
+    }
     with open("info.json", "a") as f:
         json.dump(to_json, f, indent=3)
         f.write("\n")
     print("info.json created")
     return None
+
 
 def output_txt():
     stringPattern = "SNAPSHOT {num}: TIME STAMP: {time} \
@@ -65,11 +69,12 @@ def output_txt():
         cpu=PCInfo().cpu,
         mem=PCInfo().mem,
         vmem=PCInfo().vmem
-        )
+    )
     with open("info.txt", "a") as f:
-        f.write(stringPattern+"\n")
+        f.write(stringPattern + "\n")
     print("info.txt created")
     return None
+
 
 while True:
     numberSnapshot += 1

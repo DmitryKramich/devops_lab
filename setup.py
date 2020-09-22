@@ -13,4 +13,3 @@ setup(
     author_email="Dzmitry_Kramich@epam.com",
     description="Information about usage CPU, memory, virtual memory"
 )
-
