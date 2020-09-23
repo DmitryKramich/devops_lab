@@ -1,0 +1,11 @@
+apache_vhosts:
+- ip_address_port: "*:80"
+  servername: www.domain.tld
+  documentroot: /www/domain
+  serveradmin: www-admin@foo.example.com
+  directorypath: '"/usr/local/httpd/htdocs"'
+- ip_address_port: "*:443"
+  servername: www.student.com
+  documentroot: /www/student
+  serveradmin: dzmitry_kramich@epam.com
+  directorypath: '"/usr/local/httpd/htdocs"'
