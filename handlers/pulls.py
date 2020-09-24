@@ -15,8 +15,8 @@ def get_pulls(state):
 def get_git_json():
     uname = "DmitryKramich"
     upass = "************"
-    request = requests.get("https://api.github.com/repos/alenaPy/devops_lab/pulls?per_page=100",
-                           auth=(uname, upass))
+    url = "https://api.github.com/repos/alenaPy/devops_lab/pulls?per_page=100&state=all"
+    request = requests.get(url, auth=(uname, upass))
     data = request.json()
     return data
 
