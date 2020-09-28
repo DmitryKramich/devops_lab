@@ -3,6 +3,10 @@ import requests
 
 def get_pulls(state):
     data = get_git_json()
+    return get_complited_data(state, data)
+
+
+def get_complited_data(state, data):
     if state is None:
         return get_all_data(data)
     switcher = {
