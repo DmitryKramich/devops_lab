@@ -28,7 +28,7 @@ with tempfile.TemporaryDirectory() as tmpdir:
 
     try:
         for dirpath, dirnames, files in os.walk(tmpdir):
-            if delFileName not in files and len(dirnames) == 0:
+            if delFileName not in files and delFileName not in dirnames:
                 shutil.rmtree(dirpath)
                 logging.info(f"removed catalog {dirpath}")
     except OSError as e:
