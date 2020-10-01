@@ -33,47 +33,47 @@ json = [
 
 resultAll = [
     {
-        "num": "1",
+        "num": 1,
         "title": "Homework1",
-        "link": "https://github.com/alenaPy/devops_lab/pull/1",
+        "link": "https://github.com/alenaPy/devops_lab/pull/1"
     },
     {
-        "num": "2",
+        "num": 2,
         "title": "Homework2",
-        "link": "https://github.com/alenaPy/devops_lab/pull/2",
+        "link": "https://github.com/alenaPy/devops_lab/pull/2"
     },
     {
-        "num": "3",
+        "num": 3,
         "title": "Homework3",
-        "link": "https://github.com/alenaPy/devops_lab/pull/3",
+        "link": "https://github.com/alenaPy/devops_lab/pull/3"
     }
 ]
 
 resultOpenAccepted = [
     {
-        "num": "1",
+        "num": 1,
         "title": "Homework1",
-        "link": "https://github.com/alenaPy/devops_lab/pull/1",
+        "link": "https://github.com/alenaPy/devops_lab/pull/1"
     }
 ]
 
 resultClosed = [
     {
-        "num": "2",
+        "num": 2,
         "title": "Homework2",
-        "link": "https://github.com/alenaPy/devops_lab/pull/2",
+        "link": "https://github.com/alenaPy/devops_lab/pull/2"
     },
     {
-        "num": "3",
+        "num": 3,
         "title": "Homework3",
-        "link": "https://github.com/alenaPy/devops_lab/pull/3",
+        "link": "https://github.com/alenaPy/devops_lab/pull/3"
     }
 ]
 
 resultNeedWork = [
     {
-        "num": "2",
+        "num": 2,
         "title": "Homework2",
-        "link": "https://github.com/alenaPy/devops_lab/pull/2",
+        "link": "https://github.com/alenaPy/devops_lab/pull/2"
     }
 ]
